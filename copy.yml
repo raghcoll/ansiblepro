@@ -1,0 +1,16 @@
+---
+
+- hosts: winhost
+
+  tasks:
+
+  - name: Copy File
+
+    win_copy:
+
+      src: C:\F1\TestFile.txt
+
+      dest: C:\F2\
+     
+      remote_src: yes
+

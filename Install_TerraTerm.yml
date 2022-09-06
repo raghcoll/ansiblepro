@@ -1,0 +1,11 @@
+---
+ - name: Install a package that requires 'become'
+   hosts: winhost # host group to run the module on       
+   tasks: 
+   -  name: run an executable command on a remote Windows system
+      win_chocolatey:
+        name: tera term
+      become: yes
+      become_user: Administrator
+      become_method: runas
+

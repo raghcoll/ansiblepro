@@ -1,0 +1,11 @@
+---
+ - name: Ansible win_command module example  
+   hosts: winhost
+   vars:
+    ansible_become_password: PhysicsPart2
+   tasks: 
+   -  name: Run command on a remote Windows system to install a package
+      win_command: choco install chrome
+      become: yes
+      become_method: runas
+      become_user: SYSTEM

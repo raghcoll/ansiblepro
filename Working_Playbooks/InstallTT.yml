@@ -1,0 +1,7 @@
+--- 
+- hosts: winhost
+  tasks: 
+    - name: Install teraterm version 4.105
+      win_chocolatey:
+       name: teraterm
+       version: '4.105'

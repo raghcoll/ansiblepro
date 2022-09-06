@@ -1,0 +1,10 @@
+--- 
+- 
+  gather_facts: true
+  hosts: winhost
+  tasks: 
+    - name: Install Tera term
+      winchocolatey: 
+        name: teraterm
+        state: present
+

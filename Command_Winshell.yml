@@ -1,0 +1,9 @@
+---
+ - name: Run a command with an idempotent check on what it creates, will only run when somedir/somelog.txt does not exist
+   hosts: winhost
+   tasks:
+   -name: run an executable command on a remote Windows system using Win Shell
+     ansible.windows.win_shell:python InstallJenkins.py
+     args:
+        chdir: C:\Users\NGVTE-01\Desktop\TestScripts\
+      

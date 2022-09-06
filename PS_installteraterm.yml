@@ -1,0 +1,6 @@
+---
+ -name: Run basic PowerShell script
+  hosts: winhost
+  win_powershell:
+    script: |
+      echo "choco install teraterm

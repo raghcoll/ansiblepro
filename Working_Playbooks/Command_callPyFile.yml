@@ -1,0 +1,7 @@
+---
+ - name: Ansible win_command module example  
+   hosts: winhost
+   gather_facts: true
+   tasks: 
+   -  name: run an executable command on a remote Windows system
+      win_command: python <file name>

@@ -1,0 +1,10 @@
+ansible_python_interpreter=/usr/bin/python3
+[win]
+172.20.10.2
+
+[win:vars]
+ansible_user=ansible_user
+ansible_password=Welcome@1234
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+

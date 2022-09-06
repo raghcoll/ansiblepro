@@ -1,0 +1,7 @@
+--- 
+- hosts: winhost
+  tasks: 
+    - name: Install Notepadplusplus version 7.8
+      win_chocolatey:
+       name: notepadplusplus
+       version: '7.8'

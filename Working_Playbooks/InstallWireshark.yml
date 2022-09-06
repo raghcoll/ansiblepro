@@ -1,0 +1,7 @@
+--- 
+- hosts: winhost
+  tasks: 
+    - name: Install Wireshark version 3.6.7
+      win_chocolatey:
+       name: Wireshark
+       version: '3.6.7'

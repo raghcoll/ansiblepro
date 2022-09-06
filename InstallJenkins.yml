@@ -1,0 +1,6 @@
+---
+ - name: Ansible win_command module example  
+   hosts: winhost # host group to run the module on       
+   tasks: 
+   -  name: run an executable command on a remote Windows system
+      win_command: Python InstallJenkins.py
